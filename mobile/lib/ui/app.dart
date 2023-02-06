@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:raspi_ctrl_app/ui/router.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:raspi_ctrl_app/ui/theme.dart';
+
+final scaffoldKey = GlobalKey<ScaffoldMessengerState>();
 
 class App extends ConsumerWidget {
   const App({super.key});
@@ -11,9 +14,8 @@ class App extends ConsumerWidget {
     final router = ref.watch(routerProvider);
     return MaterialApp.router(
       title: 'Raspi Controller',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      scaffoldMessengerKey: scaffoldKey,
+      theme: ref.watch(themeProvider),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       routeInformationParser: router.routeInformationParser,

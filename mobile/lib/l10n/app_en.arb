@@ -1,4 +1,7 @@
 {
   "@@locale": "en",
-  "title": "Raspi Controller"
+  "title": "Raspi Controller",
+  "get_started": "Get Started",
+
+  "signup": "Sign up"
 }
