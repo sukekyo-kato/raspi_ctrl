@@ -15,16 +15,18 @@ class LaunchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            _title(context),
-            _logo(context),
-            _signIn(context),
-            _agreement(context),
-          ],
+      body: SafeArea(
+        child: SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              _title(context),
+              _logo(context),
+              _signIn(context),
+              _agreement(context),
+            ],
+          ),
         ),
       ),
     );
