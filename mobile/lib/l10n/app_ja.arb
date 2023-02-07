@@ -2,5 +2,8 @@
   "@@locale": "ja",
   "title": "ラスパイ コントローラー",
 
-  "signup": "サインアップ"
+  "signup": "サインアップ",
+
+  "signin": "サインイン",
+  "sign_in_with_google": "Googleでサインイン"
 }

@@ -5,6 +5,9 @@ final themeProvider = Provider(
   (ref) {
     return ThemeData(
       primarySwatch: Colors.pink,
+      appBarTheme: const AppBarTheme(
+        centerTitle: true,
+      ),
     );
   },
 );

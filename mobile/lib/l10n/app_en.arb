@@ -3,5 +3,14 @@
   "title": "Raspi Controller",
   "get_started": "Get Started",
 
-  "signup": "Sign up"
+  "signup": "Sign up",
+  "signup_with_email_msg": "Enter email and password.",
+  "email": "email",
+  "password": "password",
+  "confirm_password": "confirm password",
+  "submit": "submit",
+
+  "signin_with_email_msg": "Enter email and password.",
+  "signin": "Sign in",
+  "signin_with_google": "sign in with google"
 }
